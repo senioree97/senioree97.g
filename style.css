@@ -1,46 +1,66 @@
 body {
-	margin: 0;
-	padding: 0;
-	font-size: 18px;
-	color: var(--tg-theme-text-color);
-	background: var(--tg-theme-bg-color);
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    color: var(--tg-theme-text-color);
+    background: url('your-background-image.jpg') no-repeat center center fixed;
+    background-size: cover;
 }
 
 .container {
-	max-width: 390px;
+    max-width: 390px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-.inner {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	grid-template-rows: 200px 200px 200px;
+.balance {
+    margin-bottom: 20px;
 }
 
-.img {
-	width: 150px;
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
 }
 
-.item {
-	text-align: center;
+.buttons button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
 }
 
-.btn {
-	display: inline-block;
-	padding: 10px 20px;
-	border: none;
-	background: rgb(248, 168, 24);
-	border-radius: 10px;
-	color: #fff;
-	text-transform: uppercase;
-	font-weight: 700;
-
-	transition: background .2s linear;
+.buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
-.btn:hover {
-	background: lightgreen;
+.bottom-buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.usercard {
-	text-align: center;
+.bottom-buttons button {
+    flex: 1;
+    padding: 10px 0;
+    font-size: 16px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.bottom-buttons button:hover {
+    background-color: rgba(255, 255, 255, 0.1);
 }
